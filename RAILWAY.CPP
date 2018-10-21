@@ -931,9 +931,6 @@ if(flag==1)
 	}
 
 
-remove("passenger.dat");
-rename("t2","passenger.dat");
-
 }
 
 
@@ -945,12 +942,15 @@ gotoxy(5,8);cout<<" SORRY INVALID PNR	";
 }
 
 
+	
 rr.close();
 tmp.close();
 
 b1.close();
 t.close();
 
+remove("passenger.dat");
+rename("t2","passenger.dat");
 
 }       // END OF FUNCTION
 
